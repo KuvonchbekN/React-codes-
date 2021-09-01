@@ -24,14 +24,13 @@ const useInput = (validateValue) => {
 
   return {
     value: enteredValue,
-    isTouched: valueTouched,
     valueIsValid,
     notValid,
     enteredValueHandler,
     valueBlurHandler,
     resetInput,
     validationClasses,
-    ValidClasses,
+    validClasses,
   };
 };
 
