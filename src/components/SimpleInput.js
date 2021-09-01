@@ -7,8 +7,8 @@ const SimpleInput = (props) => {
     enteredValueHandler: enteredNameChangeHandler,
     valueBlurHandler: usernameBlurHandler,
     validationClasses: nameValidationClasses,
-    ValidClasses: nameValidClasses,
-    resetInput : nameResetHandler
+    validClasses: nameValidClasses,
+    resetInput: nameResetHandler,
   } = useInput((value) => value.trim() !== "");
 
   const {
@@ -17,8 +17,8 @@ const SimpleInput = (props) => {
     enteredValueHandler: enteredEmailChangeHandler,
     valueBlurHandler: emailBlueHandler,
     validationClasses: validEmailClasses,
-    ValidClasses: emailValidClasses,
-    resetInput : emailResetHandler
+    validClasses: emailValidClasses,
+    resetInput: emailResetHandler,
   } = useInput((value) => value.includes("@"));
 
 
